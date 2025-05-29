@@ -5,12 +5,18 @@
 ```shell
 pip install -e .
 ```
+
+
 # Test
 
-## Way 1: install this server locally in Claude Desktop and interact with it right away by running:
+## Way 1: Test locally with Claude Desktop by running:
 ```shell
 mcp install server.py
 ```
+after installed successfully, you will see the tools in Claude Desktop, 
+and you can send a question like "1+2=?"
+<img src="images/claude-demo.png" width="500" alt="图片描述">
+<img src="images/1+2.png" width="500" alt="图片描述">
 
 ## Way 2: Test with  MCP Inspector
 ```shell
@@ -21,6 +27,7 @@ after MCP inspector started sucessfully:
 - refill the Command with "mcp", Arguments with "run server.py",
 - then click connect, and test the tools, resources, prompts, etc.
 ![图片描述](images/image.png)
+
 
 # Reference Doc
 - [python sdk](https://github.com/modelcontextprotocol/python-sdk)
