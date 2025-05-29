@@ -29,7 +29,7 @@ after MCP inspector started sucessfully:
 ![图片描述](images/image.png)
 
 
-# Reference Doc
+# Reference
 - [python sdk](https://github.com/modelcontextprotocol/python-sdk)
 - [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/)
 
