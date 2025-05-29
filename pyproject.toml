@@ -1,0 +1,10 @@
+[project]
+name = "mcp-getting-started"
+version = "0.1.0"
+description = "a mcp example package"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]",
+    "openai"
+]
