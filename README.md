@@ -30,12 +30,12 @@ after MCP inspector started sucessfully:
 
 
 # Chatbot
-This chatbot can only support add or sub.
+This chatbot can only support add or sub tool.
 ## run
 ```shell
 python chatbot.py
 ```
-After chatbot runsuccessfully, open http://127.0.0.1:7860 to chat like:
+After chatbot run successfully, open http://127.0.0.1:7860 to chat like:
 <img src="images/chatbot.png" width="800" alt="图片描述">
 
 
