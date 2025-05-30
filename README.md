@@ -28,6 +28,15 @@ after MCP inspector started sucessfully:
 - then click connect, and test the tools, resources, prompts, etc.
 ![图片描述](images/image.png)
 
+# Chatbot
+This chatbot can only support add or sub.
+## run
+```shell
+python chatbot.py
+```
+After chatbot runsuccessfully, open http://127.0.0.1:7860 to chat like:
+![图片描述](images/chatbot.png)
+
 
 # Reference
 - [python sdk](https://github.com/modelcontextprotocol/python-sdk)

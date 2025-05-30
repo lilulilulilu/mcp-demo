@@ -6,5 +6,12 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "mcp[cli]",
-    "openai"
+    "openai",
+    "gradio",
+    "autogen-agentchat",
+    "autogen-ext[openai]",
+    "autogen-ext[mcp]",
+    "autogen-ext[gradio]",
+    "gradio",
+    "python-dotenv"
 ]
