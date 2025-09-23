@@ -2,7 +2,7 @@
 from mcp.server.fastmcp import FastMCP
 
 # Create an MCP server
-mcp = FastMCP("Demo")
+mcp = FastMCP("Demo", port=8001, host="0.0.0.0")
 
 
 # Add an addition tool
@@ -28,6 +28,12 @@ def get_greeting(name: str) -> str:
     """Get a personalized greeting"""
     return f"Hello, {name}!"
 
+@mcp.resource("file://documents/{name}")
+def read_document(name: str) -> str:
+    """Read a document by name."""
+    # This would normally read from disk
+    return f"Content of {name}"
+
 
 @mcp.prompt()
 def review_code(code: str) -> str:
@@ -35,7 +41,9 @@ def review_code(code: str) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="sse")
+    mcp.run(transport="sse") # or mcp.run_sse_async()
+    # mcp.run(transport="streamable-http")
+   
 
 '''
 we can also run the server with stdio transport
