@@ -5,7 +5,7 @@ from autogen_agentchat.agents import AssistantAgent
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from client import list_tools, execute_tool
+from client_stdio import list_tools, execute_tool
 from qwen import ask_llm
 
 load_dotenv()
